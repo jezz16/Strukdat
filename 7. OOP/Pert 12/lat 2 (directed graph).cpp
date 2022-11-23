@@ -74,20 +74,16 @@ class Graph {
 
 
 int main(){
-    Graph graph1(8);
+    Graph graph1(5);
 
     graph1.addEdge( 0, 1);
-    graph1.addEdge( 0, 3);
-    graph1.addEdge( 1, 2);
-    graph1.addEdge( 3, 4);
-    graph1.addEdge( 3, 7);
-    graph1.addEdge( 4, 5);
-    graph1.addEdge( 4, 6);
-    graph1.addEdge( 4, 7);
-    graph1.addEdge( 5, 6);
-    graph1.addEdge( 6, 7);
+    graph1.addEdge( 1, 3);
+    graph1.addEdge( 2, 1);
+    graph1.addEdge( 2, 3);
+    graph1.addEdge( 4, 2);
+    graph1.addEdge( 4, 3);
     
     graph1.showGraph();
 
-    graph1.BFS(0);
+    graph1.BFS(4, 1);
 }
